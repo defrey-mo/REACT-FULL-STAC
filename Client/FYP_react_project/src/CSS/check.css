@@ -1,0 +1,87 @@
+label{
+  display: block;
+  color: black;
+  font-size: 13px;
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select,
+.submit{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-for-submit{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.checking{
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #d2d2d3;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  height: 75%;
+  width: 70%;
+  margin-left: 155px;
+  margin-top: 50px;
+  padding-left: 80px;
+  color: black;
+}
+
+h1{
+  margin-left: 200px;
+} 
+
+/* form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+} 
+  
+.form-group .checking-form{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checking-form input{
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+ button{
+  margin-bottom: 0;
+ }
+
+ .form-group{
+  display: flex;
+  justify-content: space-between;
+ }
+
+  .form-group input{
+  height: 10px;
+  margin-right: 50px;
+  outline: none;
+ }
