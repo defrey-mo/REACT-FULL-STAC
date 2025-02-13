@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Layout from "./common/Layout";
 import AddStudent from "./pages/AddStudent";
 import OverView from "./pages/OverView";
+import Read from "./pages/Read"
 import CheckStudent from "./pages/CheckStudent";
 import Update from "./pages/Update";
 import axios from "axios";
@@ -50,6 +51,7 @@ const App = () => {
             path="overview"
             element={<OverView setActivePage={setActivePage} />}
           />
+          <Route path="read" element={<Read />}/>
         </Route>
 
         <Route path="*" element={<Login />} />

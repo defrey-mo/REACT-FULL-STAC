@@ -13,12 +13,12 @@ export default function Dashboard({ setActivePage }) {
       counts: 12250,
       color: "#246dec",
     },
-    {
-      title: "New Students Registered",
-      ico: "groups",
-      counts: 250,
-      color: "#f5b74f",
-    },
+    // {
+    //   title: "New Students Registered",
+    //   ico: "groups",
+    //   counts: 250,
+    //   color: "#f5b74f",
+    // },
     {
       title: "Reported Cases",
       ico: "notifications",

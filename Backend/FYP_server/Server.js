@@ -13,6 +13,7 @@ const db = mysql.createConnection({
   database: "final_year_projectdb",
 });
 
+// fetching students
 app.get("/", (req, res) => {
   const sql = "SELECT * FROM students";
   db.query(sql, (err, result) => {
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
   });
 });
 
+// adding students
 app.post("/students", (req, res) => {
   /* const vlaues = [
     req.body.student_id,

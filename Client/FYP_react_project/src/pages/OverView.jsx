@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/overview.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function OverView({ students, fetchStudents, setActivePage }) {
   setActivePage("overview");
@@ -23,6 +24,7 @@ export default function OverView({ students, fetchStudents, setActivePage }) {
             <th>Surname</th>
             <th>Guardian Names</th>
             <th>Email</th>
+            <th>Phone</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -36,8 +38,9 @@ export default function OverView({ students, fetchStudents, setActivePage }) {
             <td>{students.surname}</td>
             <td>{students.guardian_fullnames}</td>
             <td style={{textTransform:"none"}}>{students.guardian_email}</td>
+            <td>{students.guardian_phone}</td>
             <td>
-              <button className='read'>Read</button>
+              <Link to="read" className='read'>Read</Link>
               <button className="update">Update</button>
               <button className="delete">Delete</button>
             </td>

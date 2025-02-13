@@ -170,18 +170,18 @@ body {
 
 .card:first-child{
   border-left: 7px solid #246dec;
-  width: 350px;
+  width: 530px;
 }
 
 .card:nth-child(2){
   border-left: 7px solid #f5b74f;
-  width: 350px;
+  width: 530px;
 }
 
-.card:nth-child(3){
+/* .card:nth-child(3){
   border-left: 7px solid #367952;
-  width: 350px;
-}
+  width: 500px;
+} */
 
 .card > span {
   font-size: 20px;
