@@ -196,10 +196,11 @@ body {
 
 .card-inner > p {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .card-inner > span {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .main-cards .card .card-inner .material-icons-outlined {

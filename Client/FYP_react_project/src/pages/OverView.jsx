@@ -40,8 +40,8 @@ export default function OverView({ students, fetchStudents, setActivePage }) {
             <td style={{textTransform:"none"}}>{students.guardian_email}</td>
             <td>{students.guardian_phone}</td>
             <td>
-              <Link to="read" className='read'>Read</Link>
-              <button className="update">Update</button>
+              <Link to={`/system/read/${students.student_id}`} className='read'>Read</Link>
+              <Link to="/system/update" className="update">Update</Link>
               <button className="delete">Delete</button>
             </td>
           </tr>}

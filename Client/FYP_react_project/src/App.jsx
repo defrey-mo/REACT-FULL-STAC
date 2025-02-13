@@ -23,9 +23,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        {/* <Route path="/" element={<Login />} /> */}
         <Route path="/login" element={<Login />} />
-
+        
         <Route path="/system" element={<Layout activePage={activePage} />}>
           <Route
             path=""
@@ -44,14 +44,18 @@ const App = () => {
             element={<AddStudent setActivePage={setActivePage} />}
           />
           <Route
-            path="update-student"
+            path="update"
             element={<Update setActivePage={setActivePage} />}
           />
           <Route
             path="overview"
             element={<OverView setActivePage={setActivePage} />}
           />
-          <Route path="read" element={<Read />}/>
+          <Route 
+            path="read/:id"
+            element={<Read />}
+          />
+         
         </Route>
 
         <Route path="*" element={<Login />} />
