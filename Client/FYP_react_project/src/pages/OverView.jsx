@@ -7,7 +7,7 @@ export default function OverView({ students, fetchStudents, setActivePage }) {
   setActivePage("overview");
     const [data, setData] = useState ([])
   useEffect(() => {
-    axios.get('http://localhost:8081/')
+    axios.get('http://localhost:8084/')
     .then(res => setData(res.data))
     .catch(err => console.log(err));
   }, [])
@@ -41,7 +41,7 @@ export default function OverView({ students, fetchStudents, setActivePage }) {
             <td>{students.guardian_phone}</td>
             <td>
               <Link to={`/system/read/${students.student_id}`} className='read'>Read</Link>
-              <Link to="/system/update" className="update">Update</Link>
+              <Link to={`/system/update/${students.student_id}`} className="update">Update</Link>
               <button className="delete">Delete</button>
             </td>
           </tr>}

@@ -69,7 +69,18 @@ app.get("/read/:id", (req, res) => {
   });
 });
 
+// app.put("/update/:id", (req, res) => {
+//   const sql = "UPDATE students SET `student_id`=?, `firstname`=?, `middlename`=?, `surname`=?, `medical_info`=?, `guardian_fullnames`=?, `guardian_phone`=?, `guardian_email`=?, `home_address`=? WHERE student_id=?";
+//   const id = req.params.id;
+//   db.query(sql, [req.body.student_id, req.body.firstname, req.body.middlename, req.body.surname, req.body.medical_info, req.body.guardian_fullnames, req.body.guardian_email, req.body.home_address, id], (err, result) => {
+//     if (err) return res.json({Message: "Error on server"});
+//     return res.json(result);
+//   }
+    
+//   )
+// })
 
-app.listen(8081, () => {
+
+app.listen(8084, () => {
   console.log("The server is working");
 });

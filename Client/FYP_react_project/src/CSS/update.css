@@ -9,5 +9,7 @@
 
 .updating h2{
   margin-top: 10px;
-  margin-left: 430px;
+  margin-left: 410px;
+  position: sticky;
+  top: 0;
 }

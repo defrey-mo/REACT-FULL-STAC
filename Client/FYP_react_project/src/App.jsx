@@ -44,7 +44,7 @@ const App = () => {
             element={<AddStudent setActivePage={setActivePage} />}
           />
           <Route
-            path="update"
+            path="update/:id"
             element={<Update setActivePage={setActivePage} />}
           />
           <Route

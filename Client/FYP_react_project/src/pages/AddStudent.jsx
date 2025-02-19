@@ -59,7 +59,7 @@ export default function AddStudent({ setAppTitle, setActivePage }) {
   const requestConfig = {
     method: "post",
     maxBodyLength: Infinity,
-    url:'http://localhost:8081/students',
+    url:'http://localhost:8084/students',
     headers:{
       "content-type":"application/json",
       accept:"application/json"
@@ -103,7 +103,7 @@ export default function AddStudent({ setAppTitle, setActivePage }) {
                 </span>
 
                 <span>
-                  <label>FirstName</label>
+                  <label>First Name</label>
                   <input
                     onChange={(e) => setfirstname(e.target.value)}
                     value={firstname}
@@ -190,7 +190,7 @@ export default function AddStudent({ setAppTitle, setActivePage }) {
               <fieldset>
                 <legend>Guardian Contact Information</legend>
                 <span>
-                  <label>First Name</label>
+                  <label>Full Names</label>
                   <input
                     onChange={(e) => setguardian_fullnames(e.target.value)}
                     value={guardian_fullnames}
@@ -218,7 +218,6 @@ export default function AddStudent({ setAppTitle, setActivePage }) {
                     type="tel"
                     name="phone"
                     id="phone"
-                    placeholder="07xxxxxxxx"
                     required
                   />
                 </span>
